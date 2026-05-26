@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>授業内制作アプリ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="project1.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Project</h1>
+
+<p class="subtitle">授業内制作アプリ</p>
+
+</header>
+
+<section class="project">
+
+<h2>
+高校教員を対象とした<br>
+生徒主体の記録運用による<br>
+評価業務支援アプリケーション開発プロジェクト
+</h2>
+
+<p class="description">
+大学2年生の「プロジェクト演習」の授業内に制作したアプリケーションです。
+</p>
+
+</section>
+
+<section class="poster">
+
+<h3>Poster</h3>
+
+<img src="スライド1.png" alt="ポスター">
+
+</section>
+
+<section class="slides">
+
+<h3>Presentation</h3>
+
+<div class="slider">
+
+<button class="prev">&#10094;</button>
+
+<img id="slideImage" src="スライド5.png" alt="プレゼン資料">
+
+<button class="next">&#10095;</button>
+
+</div>
+
+</section>
+
+<section class="back">
+
+<a href="ポートフォリオ.html">Back to Home</a>
+
+</section>
+
+<script>
+
+const slides = [
+"スライド5.png",
+"スライド11.png",
+"スライド12.png",
+"スライド13.png",
+"スライド14.png",
+"スライド15.png",
+"スライド16.png",
+"スライド17.png",
+"スライド18.png",
+"スライド19.png",
+"スライド20.png",
+"スライド21.png",
+"スライド22.png",
+"スライド23.png",
+"スライド24.png"
+];
+
+let current = 0;
+
+const slideImage = document.getElementById("slideImage");
+
+document.querySelector(".next").onclick = () => {
+
+current++;
+
+if(current >= slides.length){
+current = 0;
+}
+
+slideImage.src = slides[current];
+
+};
+
+document.querySelector(".prev").onclick = () => {
+
+current--;
+
+if(current < 0){
+current = slides.length - 1;
+}
+
+slideImage.src = slides[current];
+
+};
+
+</script>
+
+</body>
+</html>

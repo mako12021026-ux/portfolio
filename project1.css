@@ -1,0 +1,185 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+
+    font-family:'Zen Kaku Gothic New', sans-serif;
+
+    color:#111;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(65,90,125,0.08),
+    transparent 30%),
+
+    radial-gradient(circle at bottom left,
+    rgba(65,90,125,0.05),
+    transparent 40%),
+
+    #ffffff;
+}
+
+header{
+    text-align:center;
+
+    padding-top:140px;
+    padding-bottom:100px;
+}
+
+h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:110px;
+
+    color:#415A7D;
+
+    margin-bottom:10px;
+
+    letter-spacing:4px;
+}
+
+.subtitle{
+    font-size:28px;
+
+    color:#666;
+
+    letter-spacing:3px;
+}
+
+.project{
+    width:1400px;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+.project h2{
+    font-size:62px;
+
+    line-height:1.5;
+
+    color:#415A7D;
+
+    font-weight:600;
+
+    margin-bottom:50px;
+}
+
+.description{
+    font-size:30px;
+
+    margin-top:40px;
+
+    line-height:2;
+}
+
+/* ===== Poster ===== */
+
+.poster{
+    width:1500px;
+
+    margin:180px auto;
+
+    text-align:center;
+}
+
+.poster h3,
+.slides h3{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:80px;
+
+    color:#415A7D;
+
+    margin-bottom:50px;
+}
+
+.poster img{
+    width:100%;
+
+    border:1px solid rgba(65,90,125,0.1);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ===== Slides ===== */
+
+.slides{
+    width:1500px;
+
+    margin:180px auto;
+
+    text-align:center;
+}
+
+.slider{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:40px;
+}
+
+.slider img{
+    width:1200px;
+
+    border:1px solid rgba(65,90,125,0.1);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.slider button{
+    width:80px;
+    height:80px;
+
+    border:1px solid #415A7D;
+
+    background:white;
+
+    color:#415A7D;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.slider button:hover{
+    background:#415A7D;
+
+    color:white;
+}
+
+/* ===== Back ===== */
+
+.back{
+    text-align:center;
+
+    margin:180px 0;
+}
+
+.back a{
+    text-decoration:none;
+
+    color:#415A7D;
+
+    border:1px solid #415A7D;
+
+    padding:18px 45px;
+
+    font-size:20px;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+    background:#415A7D;
+
+    color:white;
+}

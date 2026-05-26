@@ -1,0 +1,207 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+
+    color:#111;
+
+    font-family:'Zen Kaku Gothic New', sans-serif;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(65,90,125,0.08),
+    transparent 30%),
+
+    radial-gradient(circle at bottom left,
+    rgba(65,90,125,0.05),
+    transparent 40%),
+
+    #ffffff;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+
+    padding-top:140px;
+    padding-bottom:80px;
+}
+
+h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:110px;
+
+    color:#415A7D;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:28px;
+
+    color:#666;
+
+    letter-spacing:3px;
+}
+
+/* Hero */
+
+.hero{
+    width:500px;
+
+    margin:0 auto 100px;
+
+    text-align:center;
+}
+
+.hero img{
+    width:100%;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Project */
+
+.project{
+    width:1200px;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+.project h2{
+    font-size:64px;
+
+    color:#415A7D;
+
+    margin-bottom:40px;
+}
+
+.description{
+    font-size:30px;
+
+    line-height:2;
+}
+
+/* Feature */
+
+.feature{
+    width:1500px;
+
+    margin:180px auto;
+}
+
+.feature h3{
+    text-align:center;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:80px;
+
+    color:#415A7D;
+
+    margin-bottom:80px;
+}
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+}
+
+.feature-box{
+    background:#f8fafc;
+
+    padding:60px;
+
+    border:1px solid rgba(65,90,125,0.10);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.feature-box h4{
+    font-size:38px;
+
+    color:#415A7D;
+
+    margin-bottom:25px;
+}
+
+.feature-box p{
+    font-size:28px;
+
+    line-height:2;
+}
+
+/* Gallery */
+
+.gallery{
+    width:1000px;
+
+    margin:180px auto;
+}
+
+.gallery h3{
+    text-align:center;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:80px;
+
+    color:#415A7D;
+
+    margin-bottom:80px;
+}
+
+.gallery-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+}
+
+.gallery-grid img{
+    width:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+}
+
+.gallery-grid img:hover{
+    transform:translateY(-8px);
+}
+
+/* Back */
+
+.back{
+    text-align:center;
+
+    margin:180px 0;
+}
+
+.back a{
+    text-decoration:none;
+
+    color:#415A7D;
+
+    border:1px solid #415A7D;
+
+    padding:18px 45px;
+
+    transition:0.3s;
+}
+
+.back a:hover{
+    background:#415A7D;
+
+    color:white;
+}
